@@ -37,6 +37,24 @@ app.get('/', async (req, res) => {
     res.send("Welcome to the Mongoose API")
 });
 
+// dev helper: serve /tmp/answers.json for Mark autofill
+app.get('/_answers', (req, res) => {
+  try {
+    res.json(JSON.parse(fs.readFileSync('/tmp/answers.json', 'utf8')));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// dev helper: serve screenshot PNGs as base64 strings (Mark autofill)
+app.get('/_shot/:name', (req, res) => {
+  const path = require('path');
+  const safe = req.params.name.replace(/[^a-zA-Z0-9_.-]/g, '');
+  const file = path.join(__dirname, '..', '..', 'screenshots', safe);
+  try {
+    const b64 = fs.readFileSync(file).toString('base64');
+    res.json({ name: safe, b64, mime: 'image/png' });
+  } catch (e) { res.status(404).json({ error: e.message }); }
+});
+
 // Express route to fetch all reviews
 app.get('/fetchReviews', async (req, res) => {
   try {
