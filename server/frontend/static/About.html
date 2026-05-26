@@ -1,8 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8" />
+  <title>About Us — Best Cars Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<div>
+<body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
@@ -12,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
@@ -24,45 +30,43 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+
+  <div class="card" style="width: 80%;margin: auto; margin-top:3%;">
+    <div class="banner" name="about-header" style="padding: 20px;">
+      <h3>About Best Cars Dealership</h3>
+      <p>Best Cars is a national car retailer with showrooms across the United States. Our mission is to make buying, financing, and servicing a vehicle simple, transparent, and trustworthy for every customer. The team below leads our product, engineering, and customer-experience work.</p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin: auto; padding-bottom: 20px;">
+      <div class="card" style="width: 30%; margin: 10px;">
+        <img class="card-img-top" src="/static/person.png" alt="Portrait of Filipe Ferreira">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title"><strong>Filipe Ferreira</strong></p>
+          <p>Chief Executive Officer</p>
+          <p class="card-text">Filipe leads the company's strategy and growth. He has 15+ years of experience in the automotive retail industry and is focused on customer-first product decisions.</p>
+          <p>filipe.ferreira@bestcars.example.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card" style="width: 30%; margin: 10px;">
+        <img class="card-img-top" src="/static/person.png" alt="Portrait of Maria Silva">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title"><strong>Maria Silva</strong></p>
+          <p>Head of Engineering</p>
+          <p class="card-text">Maria runs the engineering team that builds the dealership platform. She is passionate about clean APIs, observability, and continuous delivery for full-stack systems.</p>
+          <p>maria.silva@bestcars.example.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card" style="width: 30%; margin: 10px;">
+        <img class="card-img-top" src="/static/person.png" alt="Portrait of Daniel Costa">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title"><strong>Daniel Costa</strong></p>
+          <p>Customer Experience Lead</p>
+          <p class="card-text">Daniel makes sure every dealership branch delivers the same friendly, transparent customer experience. He owns the review and feedback program for the company.</p>
+          <p>daniel.costa@bestcars.example.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
+  </div>
+</body>
 </html>
