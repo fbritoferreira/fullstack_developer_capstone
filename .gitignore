@@ -36,3 +36,6 @@ npm-debug.log*
 
 # OS
 Thumbs.db
+
+# Screenshot tooling
+/screenshots-tooling/node_modules/

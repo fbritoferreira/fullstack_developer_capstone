@@ -1,0 +1,40 @@
+build	Set up job	2026-05-26T09:39:43.0740378Z ##[group]Runner Image Provisioner
+build	Set up job	2026-05-26T09:39:43.0746750Z ##[group]Operating System
+build	Set up job	2026-05-26T09:39:43.0749390Z ##[group]Runner Image
+build	Set up job	2026-05-26T09:39:43.0755533Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-05-26T09:39:44.0443368Z Complete job name: build
+build	Checkout Code	﻿2026-05-26T09:39:44.1178042Z ##[group]Run actions/checkout@v3
+build	Checkout Code	2026-05-26T09:39:44.2101894Z ##[group]Getting Git version info
+build	Checkout Code	2026-05-26T09:39:44.2258875Z ##[group]Initializing the repository
+build	Checkout Code	2026-05-26T09:39:44.2390569Z ##[group]Disabling automatic garbage collection
+build	Checkout Code	2026-05-26T09:39:44.2419921Z ##[group]Setting up auth
+build	Checkout Code	2026-05-26T09:39:44.3100599Z ##[group]Fetching the repository
+build	Checkout Code	2026-05-26T09:39:44.6078798Z ##[group]Determining the checkout info
+build	Checkout Code	2026-05-26T09:39:44.6083096Z ##[group]Checking out the ref
+build	Set up Python	﻿2026-05-26T09:39:44.6661498Z ##[group]Run actions/setup-python@v4
+build	Set up Python	2026-05-26T09:39:44.6662715Z with:
+build	Set up Python	2026-05-26T09:39:44.6663430Z   python-version: 3.10
+build	Set up Python	2026-05-26T09:39:44.6664277Z   check-latest: false
+build	Set up Python	2026-05-26T09:39:44.6665371Z   token: ***
+build	Set up Python	2026-05-26T09:39:44.6666124Z   update-environment: true
+build	Set up Python	2026-05-26T09:39:44.6667048Z   allow-prereleases: false
+build	Set up Python	2026-05-26T09:39:44.6667903Z ##[endgroup]
+build	Set up Python	2026-05-26T09:39:44.8404501Z ##[group]Installed versions
+build	Set up Python	2026-05-26T09:39:44.8500222Z Successfully set up CPython (3.10.20)
+build	Set up Python	2026-05-26T09:39:44.8502701Z ##[endgroup]
+build	Install flake8	﻿2026-05-26T09:39:44.8654262Z ##[group]Run python -m pip install --upgrade pip
+build	Install flake8	2026-05-26T09:39:44.8655614Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+build	Install flake8	2026-05-26T09:39:44.8656736Z ^[[36;1mpip install flake8^[[0m
+build	Install flake8	2026-05-26T09:39:44.8711809Z shell: /usr/bin/bash -e {0}
+build	Install flake8	2026-05-26T09:39:44.8712959Z env:
+build	Install flake8	2026-05-26T09:39:44.8713874Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Install flake8	2026-05-26T09:39:44.8715463Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+build	Install flake8	2026-05-26T09:39:44.8717036Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Install flake8	2026-05-26T09:39:44.8718475Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Install flake8	2026-05-26T09:39:44.8719914Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Install flake8	2026-05-26T09:39:44.8721328Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+build	Install flake8	2026-05-26T09:39:44.8722755Z ##[endgroup]
+build	Install flake8	2026-05-26T09:39:45.5247080Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (26.1.1)
+build	Install flake8	2026-05-26T09:39:46.2042119Z Collecting flake8
+build	Install flake8	2026-05-26T09:39:46.2722376Z   Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+build	Install flake8	2026-05-26T09:39:46.2882153Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
