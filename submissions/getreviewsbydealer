@@ -1,0 +1,63 @@
+$ curl http://localhost:8000/djangoapp/reviews/dealer/17
+
+{
+    "status": 200,
+    "reviews": [
+        {
+            "_id": "6a1566dffe40474d1c13a2d9",
+            "id": 8,
+            "name": "Marmaduke Ashbe",
+            "dealership": 17,
+            "review": "Polarised asynchronous Graphical User Interface",
+            "purchase": true,
+            "purchase_date": "05/06/2020",
+            "car_make": "BMW",
+            "car_model": "530",
+            "car_year": 2006,
+            "__v": 0,
+            "sentiment": "neutral"
+        },
+        {
+            "_id": "6a1566dffe40474d1c13a2f2",
+            "id": 33,
+            "name": "Rey Bannell",
+            "dealership": 17,
+            "review": "Up-sized mission-critical initiative",
+            "purchase": true,
+            "purchase_date": "10/31/2020",
+            "car_make": "Pontiac",
+            "car_model": "GTO",
+            "car_year": 2004,
+            "__v": 0,
+            "sentiment": "neutral"
+        },
+        {
+            "_id": "6a1566dffe40474d1c13a2f8",
+            "id": 39,
+            "name": "Donn Wick",
+            "dealership": 17,
+            "review": "Cross-group multimedia firmware",
+            "purchase": false,
+            "purchase_date": "04/29/2020",
+            "car_make": "Buick",
+            "car_model": "Terraza",
+            "car_year": 2006,
+            "__v": 0,
+            "sentiment": "neutral"
+        },
+        {
+            "_id": "6a1566dffe40474d1c13a2fc",
+            "id": 43,
+            "name": "Glennis Hackett",
+            "dealership": 17,
+            "review": "Triple-buffered upward-trending conglomeration",
+            "purchase": false,
+            "purchase_date": "08/20/2020",
+            "car_make": "Nissan",
+            "car_model": "Altima",
+            "car_year": 2008,
+            "__v": 0,
+            "sentiment": "neutral"
+        }
+    ]
+}

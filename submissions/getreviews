@@ -1,0 +1,6 @@
+$ curl http://localhost:8000/djangoapp/reviews/dealer/3
+
+{
+    "status": 200,
+    "reviews": []
+}
